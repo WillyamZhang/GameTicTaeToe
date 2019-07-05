@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe game</title>
+  <link rel='stylesheet prefetch' href='https://getbootstrap.com/2.3.2/assets/css/bootstrap.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="tic-tac-toe">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <h1 class="span4">Tic Tac Toe</h1>
+        <div class="span4">
+          <div class="input-prepend input-append">
+            <input type="text" id="inputScale" name="addmore" class="form-control number" placeholder="Enter Scale Here" value="3"  style="width: 165px;"> 
+            <button type="button" id="btnGo" class="btn">Go</button>
+          </div>
+          <div class="input-prepend input-append">
+            <span class="add-on win_text">O won</span><strong id="o_win" class="win_times add-on">0</strong><span class="add-on">time(s)</span>
+          </div>
+          <div class="input-prepend input-append">
+            <span class="add-on win_text">X won</span><strong id="x_win" class="win_times add-on">0</strong><span class="add-on">time(s)</span>
+          </div>
+          <div class="input-prepend input-append">
+            <strong><label id="lblPlayer" style="font-size: 25px; font-weight: bold;"></label></strong>
+          </div>
+        </div>
+        <table id="game">
+        </table>
+      </div>
+    </div>
+    <div class="clr">&nbsp;</div>
+  <div class="row"><a href="#" id="reset" class="btn-success btn span3" >Restart</a></div>
+
+  </div>
+  <script src='https://code.jquery.com/jquery-1.7.2.min.js'></script>
+  <script  src="js/index.js"></script>
+</body>
+</html>
